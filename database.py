@@ -5,10 +5,8 @@ from pymongo.errors import PyMongoError
 # Read MongoDB connection URI from environment variable for safety
 # Set MONGO_URI in your environment before running, e.g.:
 # $env:MONGO_URI = 'mongodb+srv://user:pass@cluster0.../'
-# $env:MONGO_URI = ''
 
-# MONGO_URI = os.environ.get("MONGO_URI") or os.environ.get("MONGODB_URI")
-MONGO_URI = ''
+MONGO_URI = os.environ.get("MONGO_URI") or os.environ.get("MONGODB_URI")
 
 _client = None
 _db = None
